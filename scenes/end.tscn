@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cpjuyng5j8t1u"]
+
+[ext_resource type="Script" uid="uid://dpf2x7hwsb1c1" path="res://scenes/AreaTrigger.gd" id="1_mwn6m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3d26k"]
+
+[node name="Area2D" type="Area2D" unique_id=955764397]
+script = ExtResource("1_mwn6m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1944394208]
+shape = SubResource("RectangleShape2D_3d26k")
+
+[connection signal="body_entered" from="." to="." method="_on_Area_Trigger_body_entered"]
