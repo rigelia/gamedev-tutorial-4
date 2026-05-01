@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://dvm6w1dnrftse"]
+
+[ext_resource type="Script" uid="uid://rvypipkk0jx5" path="res://start.gd" id="1_l6cm7"]
+[ext_resource type="Script" uid="uid://6ldlkyfj68au" path="res://scenes/exit.gd" id="2_ekxnf"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ekxnf"]
+font_color = Color(1, 1, 0.48235294, 1)
+
+[node name="MainMenu" type="MarginContainer" unique_id=1193892980]
+offset_right = 254.0
+offset_bottom = 166.0
+size_flags_horizontal = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=719399510]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=1674348818]
+layout_mode = 2
+size_flags_horizontal = 4
+alignment = 1
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=1526560333]
+layout_mode = 2
+text = "bird game #3"
+label_settings = SubResource("LabelSettings_ekxnf")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/VBoxContainer" unique_id=1774274527]
+layout_mode = 2
+alignment = 1
+
+[node name="LinkButton" type="LinkButton" parent="HBoxContainer/VBoxContainer/VBoxContainer" unique_id=69596228]
+layout_mode = 2
+text = "start"
+script = ExtResource("1_l6cm7")
+scene_to_load = "Level1"
+
+[node name="LinkButton2" type="LinkButton" parent="HBoxContainer/VBoxContainer/VBoxContainer" unique_id=1087143487]
+layout_mode = 2
+text = "quit idk"
+script = ExtResource("2_ekxnf")
+
+[node name="CenterContainer" type="CenterContainer" parent="HBoxContainer" unique_id=1255912592]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/CenterContainer" unique_id=511816891]
+layout_mode = 2
